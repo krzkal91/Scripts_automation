@@ -12,13 +12,13 @@
 List of scripts:<br>
 
 <ol>
-  <li>DeleteInactiveUsers<br><br>
+  <li><b>DeleteInactiveUsers</b><br><br>
     Script created to automate deleting of deactivated AD users that have been placed in a specific OU 30 days after last edit. Created as an implementation of a 30 days deletion policy of a customer, running on a daily basis.
   </li><br>
-  <li>Onboarding_Brukeropprettelse<br><br>
+  <li><b>Onboarding_Brukeropprettelse</b><br><br>
     Onboarding script used to create users in on prem AD and assign some basic access groups. Future releases will coordinate further steps with license/group and role assignment in O365/AzureAD. Based on a csv file exported from the system of the HR department script is creating a an AD user, email address, providing basic access and sending a notification by email to the manager and HR department.
   </li><br>
-  <li>WipRix<br><br>
+  <li><b>WipRix</b><br><br>
     A PowerShell based administrative application with a full GUI automating the daily repetitive tasks of Citrix administration. Created for internal ServiceDesk use as a team work, Wiprix will check if user is logged in, what kind of sessions are running, on which servers, can also LOG OFF the user from all sessions, create a new citrix profile and add user to SMS passcode group - each of those tasks with just a single mouse click. It helped SD agenst to increase the performance of basic troubleshooting and solving most common Citrix-related issues. App has also its own special design.
     <br><br>
     In future releases it will also help SD agents coordinate onpremAD management with AzureAD management, simplifying basic tasks even further and allowing to use a single tool to sort all of the issues now spread over many separate tools.
