@@ -13,7 +13,9 @@ List of scripts:<br>
 
 <ol>
   <li><b>DeleteInactiveUsers</b><br><br>
-    Script created to automate deleting of deactivated AD users that have been placed in a specific OU 30 days after last edit. Created as an implementation of a 30 days deletion policy of a customer, running on a daily basis.
+    Script created to automate deleting of deactivated AD users that have been placed in a specific OU 30 days after last edit. Created as an implementation of a 30 days deletion policy of a customer, running on a daily basis.<br><br>
+    In ver. 1.1 some minor fixes plus  fuctionality of sending the generated log file to admin emailaddress.
+    <br><br>
   </li><br>
   <li><b>Onboarding_Brukeropprettelse</b><br><br>
     Onboarding script used to create users in on prem AD and assign some basic access groups. Future releases will coordinate further steps with license/group and role assignment in O365/AzureAD. Based on a csv file exported from the system of the HR department script is creating a an AD user, email address, providing basic access and sending a notification by email to the manager and HR department.
