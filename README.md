@@ -20,6 +20,9 @@ List of scripts:<br>
   <li><b>Onboarding_Brukeropprettelse</b><br><br>
     Onboarding script used to create users in on prem AD and assign some basic access groups. Future releases will coordinate further steps with license/group and role assignment in O365/AzureAD. Based on a csv file exported from the system of the HR department script is creating a an AD user, email address, providing basic access and sending a notification by email to the manager and HR department.
   </li><br>
+  <li><b>AzureLicense</b><br><br>
+    Supplementing script for the Onboarding_Brukeropprettelse - script is first validating if there are any users in on-prem AD that can be synced with Azure, so checking if users are already synced, and if they are - users are getting assigned a license/group based on the "Position" value from on-prem AD. If users are not found in AzureAD - script is pending 20 mins and calling recursively some of its cmdlets again, checking till all of the given users are processed successfully. (AzureAD-OnpremAD hourly sync scenario).
+  </li><br>
   <li><b>WipRix</b><br><br>
     A PowerShell based administrative application with a full GUI automating the daily repetitive tasks of Citrix administration. Created for internal ServiceDesk use as a team work, Wiprix will check if user is logged in, what kind of sessions are running, on which servers, can also LOG OFF the user from all sessions, create a new citrix profile and add user to SMS passcode group - each of those tasks with just a single mouse click. It helped SD agenst to increase the performance of basic troubleshooting and solving most common Citrix-related issues. App has also its own special design.
     <br><br>
