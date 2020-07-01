@@ -44,6 +44,6 @@ Functionalities:<br>
     - Exception handling OFC...<br>
     - All served in a User-friendly GUI<br>
  <br><br>
-    <img src="Addad1.png" alt="AddAD GUI">
+    <img src="Addad1.PNG" alt="AddAD GUI">
   </li><br>
   </ol>
