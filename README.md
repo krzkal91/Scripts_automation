@@ -30,4 +30,20 @@ List of scripts:<br>
     <br><br><br>
     <img src="wiprix.jpeg" alt="WipRix GUI">
   </li><br>
+  <li><b>AddAD</b><br><br>
+    GUI version for Entur user creation and basic management with some additional features  <br>
+Upgraded version utilizing parts of script Onboarding_Brukeropprettelse.ps1 created by Krzysztof Kalinowski and Patryk Kolodziej <br>
+Functionalities:<br>
+    - Authenticates users through AzureAD<br>
+    - creates Users in AD with given input<br>
+    - User creation possible both manually by typing the necessary values or semi-automated by providing the xlsx file that is valid with the schema.
+	Two xlsx parsing modes: for single user creation and for batch creation (one sheet per user within the input file).<br>
+    - sends email to HR and manager post creation - if user chooses to<br>
+    - after successful sync - we can check status of Azure AD and get all Licenses and Azure Groups user is member of<br>
+    - Can add MFA Azure access for the user if existent in AzureAD and an access group responsible for E3 license<br>
+    - Exception handling OFC...<br>
+    - All served in a User-friendly GUI<br>
+ <br><br>
+    <img src="Addad1.png" alt="AddAD GUI">
+  </li><br>
   </ol>
