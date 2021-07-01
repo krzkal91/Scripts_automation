@@ -30,6 +30,20 @@ List of scripts:<br>
     <br><br><br>
     <img src="wiprix.jpeg" alt="WipRix GUI">
   </li><br>
+  <li><b>Config</b><br><br>
+    A Powershell script for initial Azure VM configuration, performing 3 tasks: <br><br>
+	  <ol>
+		  <li>Resizing the C partition, as the disk size will be shrinked in one of the later steps</li>
+		  <li>Performing the initial OS update post VM provisioning</li>
+		  <li>Enabling WinRM remoting and installs a cerfificate - hardcoded for North Europe region, but can be changed/parameterized - for further configuration steps using PS remoting</li>
+	  </ol>
+  </li><br>
+  <li><b>CreateVHD</b><br><br>
+    This script was created to automate the process of VHD creation based on the Azure VM OS disk. Due to some technical requirements - the process is based on the AzureRM module. Parts of the solution are genuinely coded by me, parts have also been inspired by others.
+  </li><br>
+  <li><b>ShrinkDisk</b><br><br>
+    This script was created to automate the process of OS disk resizing of an Azure VM. Due to some technical requirements - the process is based on the AzureRM module. Parts of the solution are genuinely coded by me, parts have also been inspired by others.
+  </li><br>
   <li><b>AddAD</b><br><br>
     GUI version for Entur user creation and basic management with some additional features  <br>
 Upgraded version utilizing parts of script Onboarding_Brukeropprettelse.ps1 created by Krzysztof Kalinowski and Patryk Kolodziej <br>
